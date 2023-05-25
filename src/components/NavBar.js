@@ -2,8 +2,9 @@ import React from 'react';
 import Logo from './Logo';
 import Link from "next/link"
 import { useRouter } from 'next/router';
-import { GithubIcon, LinkedInIcon, TwitterIcon, PinterestIcon } from './Icons';
+import { GithubIcon, LinkedInIcon, TwitterIcon, PinterestIcon, SunIcon, MoonIcon } from './Icons';
 import { motion } from 'framer-motion';
+import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const iconInfo="w-6 mx-3";
 
@@ -14,9 +15,8 @@ const CustomLink = ({href, title, className=""}) => {
       {title}
       <span
         className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5
-          group-hover:w-full transition-[width] ease duration-300
-          ${router.asPath === href ? "w-full" : "w-0"}
-        `}>
+          group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+          ${router.asPath === href ? "w-full" : "w-0"}`}>
         &nbsp;
       </span>
     </Link>
@@ -25,8 +25,10 @@ const CustomLink = ({href, title, className=""}) => {
 }
 
 export const NavBar = () => {
+  const [mode, setMode] = useThemeSwitcher();
+
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light">
         <nav>
             <CustomLink href="/" title="Home" className='mr-4' />
             <CustomLink href="/about" title="About" className='mx-4'/>
@@ -46,6 +48,11 @@ export const NavBar = () => {
             <motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={iconInfo}>
                 <PinterestIcon />
             </motion.a>
+            <button 
+              onClick={() => setMode(mode === "light" ? "dark" : "light")}
+              className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark" }`}>
+              { mode === "dark" ? <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} /> }
+            </button>
         </nav>
         <div className="absolute left-[50%] top-2 translate-x-[-50%]">
           <Logo />

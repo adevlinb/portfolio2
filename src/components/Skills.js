@@ -2,16 +2,14 @@ import { motion } from "framer-motion";
 
 const Skill = ({name, x, y}) => {
     return (
-
         <motion.div
         className="flex items-center justify-center rounded-full absolute
         font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer
-        py-3 px-6"
+        py-3 px-6 dark:text-dark dark:bg-light"
         whileHover={{scale:1.05}}
         initial={{x:0, y:0}}
         viewport={{once:true}}
-        transition={{duration:5}}
-        whileInView={{x:x, y:y}}>
+        whileInView={{x:x, y:y, transition: {duration: 1.5} }}>
             {name}
         </motion.div>
     )
@@ -23,7 +21,7 @@ export default function Skills() {
         <h2 className='font-bold text-8xl mt-64 w-full text-center'>
             Skills
         </h2>
-        <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight'>
+        <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark'>
             <Skill name="WEB" x="" y=""/>
             <Skill name="SKILL" x="-22vw" y="2vw"/>
             <Skill name="SKILL" x="-5vw" y="-10vw"/>

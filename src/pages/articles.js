@@ -8,6 +8,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion, useMotionValue } from "framer-motion";
 import article3 from "public/images/articles/smooth scrolling in reactjs.png";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -88,6 +89,7 @@ export default function articles() {
         <title>aDevlinb Potfolio! | Articles Page</title>
         <meta name="description" content="profile - articles page"/>
     </Head>
+    <TransitionEffect />
     <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
         <Layout className='pt-16'>
             <AnimatedText text="Words Can Change The World!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>

@@ -6,6 +6,7 @@ import { LinkArrow } from '@/components/Icons';
 import HireMe from '@/components/HireMe';
 import Image from 'next/image';
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import TransitionEffect from '@/components/TransitionEffect';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <title>Create Next App</title>
         <meta name="Devlin Booth" content="Software Engineering Portfolio" />
       </Head>
+      <TransitionEffect />
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
         <Layout className='pt-0 md:p-16 sm:pt-8'>
           <div className="flex items-center justify-between w-full lg:flex-col">
@@ -44,7 +46,7 @@ export default function Home() {
             </div>
         </div>
         </Layout>
-        <HireMe/>
+        <HireMe />
         <div className='fixed right-8 bottom-8 inline-block w-16 md:hidden'>
             <Image src={lightBulb} alt="myProfile" className='w-full h-auto'/>
         </div>

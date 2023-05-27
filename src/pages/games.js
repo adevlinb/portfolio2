@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
-import minesweeper from "../../public/images/projects/minesweeper";
+import minesweeper from "../../public/images/projects/minesweeper.png";
 
 const FramerImage = motion(Image);
 
@@ -94,7 +94,7 @@ export default function Games() {
             <ul className='grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16 '>
                 <FeaturedGame 
                     title="Checkers"
-                    summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+                    summary="Can't wait to show y'all how to play minesweeper!!"
                     time="9 min read"
                     img={minesweeper}
                     link="/"

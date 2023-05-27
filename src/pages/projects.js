@@ -4,9 +4,9 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
+import xyla from "public/images/projects/xyla.png";
 
 const FramerImage = motion(Image)
 
@@ -82,7 +82,7 @@ export default function projects() {
                         <FeaturedProject
                             title="Crypto Screener Application"
                             summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                            image={project1}
+                            image={xyla}
                             link="/"
                             github="/"
                             type="Featured Project"
@@ -91,16 +91,16 @@ export default function projects() {
                         />
                     </div>
                     <div className="col-span-6 sm:col-span-12">
-                        <Project title="Crypto Screener Application" image={project1} link="/" github="/" type="Featured Project" project="google.com"/>
+                        <Project title="Crypto Screener Application" image={xyla} link="/" github="/" type="Featured Project" project="google.com"/>
                     </div>
                     <div className="col-span-6 sm:col-span-12">
-                        <Project title="Crypto Screener Application" image={project1} link="/" github="/" type="Featured Project" project="google.com"/>
+                        <Project title="Crypto Screener Application" image={xyla} link="/" github="/" type="Featured Project" project="google.com"/>
                     </div>
                     <div className="col-span-12">
                         <FeaturedProject
                             title="Crypto Screener Application"
                             summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                            image={project1}
+                            image={xyla}
                             link="/"
                             github="/"
                             type="Featured Project"
@@ -108,10 +108,10 @@ export default function projects() {
                         />
                     </div>
                     <div className="col-span-6 sm:col-span-12">
-                        <Project title="Crypto Screener Application" image={project1} link="/" github="/" type="Featured Project" project="google.com"/>
+                        <Project title="Crypto Screener Application" image={xyla} link="/" github="/" type="Featured Project" project="google.com"/>
                     </div>
                     <div className="col-span-6 sm:col-span-12">
-                        <Project title="Crypto Screener Application" image={project1} link="/" github="/" type="Featured Project" project="google.com"/>
+                        <Project title="Crypto Screener Application" image={xyla} link="/" github="/" type="Featured Project" project="google.com"/>
                     </div>
                 </div>
             </Layout>

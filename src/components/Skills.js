@@ -24,16 +24,16 @@ export default function Skills() {
                 lg:bg-circularLightLg lg:dark:bg-circularDarkLg
                 md:bg-circularLightMd md:dark:bg-circularDarkMd
                 sm:bg-circularLightSm sm:dark:bg-circularDarkSm'>
-                <Skill name="WEB" x="" y=""/>
-                <Skill name="SKILL" x="-22vw" y="2vw"/>
-                <Skill name="SKILL" x="-5vw" y="-10vw"/>
-                <Skill name="SKILL" x="0vw" y="12vw"/>
-                <Skill name="SKILL" x="20vw" y="6vw"/>
-                <Skill name="SKILL" x="-20vw" y="-15vw"/>
-                <Skill name="SKILL" x="15vw" y="-12vw"/>
-                <Skill name="SKILL" x="32vw" y="-5vw"/>
-                <Skill name="SKILL" x="0vw" y="-20vw"/>
-                <Skill name="SKILL" x="-25vw" y="18vw"/>
+                <Skill name="Javascript" x="" y=""/>
+                <Skill name="HTML" x="-22vw" y="2vw"/>
+                <Skill name="CSS" x="-5vw" y="-10vw"/>
+                <Skill name="NODEJS" x="0vw" y="12vw"/>
+                <Skill name="EXPRESSJS" x="20vw" y="6vw"/>
+                <Skill name="MONGODB" x="-20vw" y="-15vw"/>
+                <Skill name="MONGOOSE" x="15vw" y="-12vw"/>
+                <Skill name="PYTHON" x="32vw" y="-5vw"/>
+                <Skill name="DJANGO" x="0vw" y="-20vw"/>
+                <Skill name="POSTGRESQL" x="-25vw" y="18vw"/>
                 <Skill name="SKILL" x="18vw" y="18vw"/>
             </div>
         </div>

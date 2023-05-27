@@ -3,7 +3,7 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Layout from "@/components/Layout";
 import Skills from "@/components/Skills";
-import { motion, useMotionValue, useSpring, useInView } from "framer-motion";
+import { useMotionValue, useSpring, useInView } from "framer-motion";
 import Head from "next/head";
 import { useEffect, useRef } from "react";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -42,10 +42,11 @@ export default function about() {
                 <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
                     <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
                         <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
-                        <p className="font-medium mt-2">Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional,
-                            and user-centered digital experiences. With 4 years of experience in the field. I am always looking for
-                            new and innovative ways to bring my clients' visions to life.</p>
-                        <p className="font-medium mt-2 mb-2">I believe that design is about more than just making things look pretty – it's about solving problems and
+                        <p className="font-medium mt-2 text-2xl">Hi!! 👋</p>
+                        <p className="font-medium mt-2 mb-2"> I'm Devlin, a full stack software engineer with a passion for creating functional
+                            and user-centered digital experiences and playing dodgeball! With 2 years of experience, I am hungry for
+                            new and innovative ways to use software to bring concepts to reality.</p>
+                        <p className="font-medium mt-2 mb-2">Design is about more than just making things look pretty – it's about solving problems and
                             creating intuitive, enjoyable experiences for users.</p>
                         <p className="font-medium mt-2">Whether I'm working on a website, mobile app, or
                             other digital product, I bring my commitment to design excellence and user-centered thinking to

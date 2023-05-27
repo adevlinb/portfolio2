@@ -39,7 +39,7 @@ export default function Home() {
 						hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark 
 						hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base'
 						download={true}>
-						Resume <LinkArrow className={"w-6 ml-1"}/>
+						Resume<LinkArrow className={"w-6 ml-1"}/>
 					</Link>
 					<Link href="mailto:adevlin.booth@gmail.com" className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'>Contact</Link>
                 </div>

@@ -34,9 +34,10 @@ export default function Education() {
             <div className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
                 <motion.div style={{scaleY: scrollYProgress}} ref={ref} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[29px] xs:left-[20px]'/>
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
-                    <Details type="Bachelor Of Science In Computer Science" time="2016-2020" place="Massachusetts Institute Of Technology (MIT)" info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence." />
-                    <Details type="Master Of Computer Science" time="2020-2022" place="Stanford University" info="Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding." />
-                    <Details type="Online Coursework" time="2016-2020" place="Coursera And EdX" info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering." />
+                    <Details type="Software Engineering Certificate" time="2022-2023" place="General Assembly" info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering." />
+                    <Details type="Software Engineering Intensive" time="2021-2022" place="General Assembly" info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering." />
+                    <Details type="Master Of Arts in Landscape Architecture" time="2008-2011" place="Louisiana State University" info="Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding." />
+                    <Details type="Bachelor Of Science In Urban Studies" time="2003-2007" place="University of New Orleans" info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence." />
                 </ul>
             </div>
         </div>

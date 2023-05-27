@@ -34,9 +34,9 @@ export default function Experience() {
             <div className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
                 <motion.div style={{scaleY: scrollYProgress}} ref={ref} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[29px] xs:left-[20px]'/>
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
-                    <Details position="Software Engineer" company="Google" companyLink="https://www.google.com" time="2022-present" address="San Francisco, California" work="awesome description here"/>
-                    <Details position="Software Engineer" company="Google" companyLink="https://www.google.com" time="2022-present" address="San Francisco, California" work="awesome description here"/>
-                    <Details position="Software Engineer" company="Google" companyLink="https://www.google.com" time="2022-present" address="San Francisco, California" work="awesome description here"/>
+                    <Details position="Software Engineer" company="Hack4LA" companyLink="https://www.hackforla.org/" time="March, 2023 - Present" address="Los Angeles, California" work="awesome description here"/>
+                    <Details position="Software Engineering Associate" company="General Assembly" companyLink="https://generalassemb.ly/" time="June, 2022 - Present" address="Los Angeles, California" work="awesome description here"/>
+                    <Details position="Software Engineering Fellow" company="General Assembly" companyLink="https://generalassemb.ly/" time="December, 2021 - March, 2022" address="Los Angeles, California" work="awesome description here"/>
                     <Details position="Software Engineer" company="Google" companyLink="https://www.google.com" time="2022-present" address="San Francisco, California" work="awesome description here"/>
                 </ul>
             </div>

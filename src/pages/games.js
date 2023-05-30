@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import minesweeper from "../../public/images/projects/minesweeper.png";
+import { APIIcon, AWSIcon, CSSIcon, CodeSandboxIcon, DjangoIcon, DjangoRestIcon, DockerIcon, GithubIcon, HtmlIcon, JavascriptIcon, LinkedInIcon, MongoDbIcon, NodeJSIcon, PostgresqlIcon, PythonIcon, ReactIcon, ReadMeIcon, XylaIcon } from '@/components/Icons';
 
 const FramerImage = motion(Image);
 
@@ -40,20 +41,24 @@ const MovingImg = ({title, img, link}) => {
                 initial={{ opacity: 0 }}
                 whileInView={{opacity: 1, transition: { duration: 0.4 }}}
                 className="w-96 h-auto hidden absolute rounded-lg z-10 md:!hidden" />
-        </Link> 
+        </Link>
     )
 }
 
-const Game = ({img, title, date, link}) => {
+const Game = ({img, title, date, link, children}) => {
     return ( 
         <motion.li 
-            initial={{y:200}}
+            initial={{y:175}}
             whileInView={{y:0, transition: {duration: 0.5, ease:"easeInOut"}}}
             viewport={{once:true}}
+            sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
             className="relative w-full p-4 py-6 my-4 rounded-xl flex 
                 items-center justify-between bg-light text-dark first:mt-0 border dark:text-light
                 border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark sm:flex-col">
             <MovingImg title={title} img={img} link={link}/>
+            <div className='flex justify-center'>
+                {children}
+            </div>
             <span className="text-primary font-semibold dark:text-primaryDark sm:self-start xs:text-sm">{date}</span>
         </motion.li>
     )
@@ -67,12 +72,11 @@ const FeaturedGame = ({img, title, time, summary, link}) => {
                 <FramerImage src={img} alt={title} className="w-full h-auto" 
                     whileHover={{scale:1.05}}
                     transition={{duration:0.2}}
-                    priority 
                     sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
                 />
             </Link> 
             <Link href={link} target="_blank">
-                <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline sm:text-lg '>{title}</h2>
+                <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline sm:text-lg'>{title}</h2>
             </Link>
             <p className='text-sm mb-2'>{summary}</p> 
             <span className='text-primary font-semibold dark:text-primaryDark'>{time}</span>
@@ -90,59 +94,80 @@ export default function Games() {
     <TransitionEffect />
     <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
         <Layout className='pt-16'>
-            <AnimatedText text="Words Can Change The World!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
+            <AnimatedText text="Games Can Change The World!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
             <ul className='grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16 '>
                 <FeaturedGame 
                     title="Checkers"
-                    summary="Can't wait to show y'all how to play minesweeper!!"
+                    summary="The family favorite! Checkers"
                     time="9 min read"
                     img={minesweeper}
                     link="/"
                     />
                 <FeaturedGame 
                     title="Minesweeper"
-                    summmary="Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience."
+                    summmary="Can't wait to show y'all how to play minesweeper!!"
                     time="10 min read"
                     img={minesweeper}
-                    link="/"
+                    link="https://adevlinb.github.io/minesweeper/"
                 />
             </ul>
         <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">All Games</h2>
         <ul>
+            
+            <Game 
+                title="Mastermind"
+                summmary="Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience."
+                time="10 min read"
+                img={minesweeper}
+                link="https://adevlinb.github.io/Mastermind/"
+                date="March 22, 2023">
+                    <AWSIcon />
+                    <APIIcon />
+                    <CodeSandboxIcon />
+                    <CSSIcon />
+                    <DjangoRestIcon />
+                    <DjangoIcon />
+                    <DockerIcon />
+                    <GithubIcon  />
+                    <HtmlIcon />
+                    <JavascriptIcon />
+                    <LinkedInIcon />
+                    <MongoDbIcon />
+                    <NodeJSIcon />
+                    <PostgresqlIcon />
+                    <PythonIcon />
+                    <ReactIcon /> 
+                    <ReadMeIcon />
+                    <XylaIcon />
+            </Game>
             <Game
-                title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+                title="Rock, Paper, Scissors"
                 date="March 22, 2023"
                 link="/"
                 img={minesweeper}
             />
             <Game
-                title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+                title="Connect Four"
                 date="March 22, 2023"
                 link="/"
                 img={minesweeper}
             />
             <Game
-                title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+                title="Tic-Tac-Toe"
                 date="March 22, 2023"
                 link="/"
                 img={minesweeper}
             />
             <Game
-                title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+                title="Spaceman"
                 date="March 22, 2023"
                 link="/"
                 img={minesweeper}
             />
             <Game
-                title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+                title="Concentration"
                 date="March 22, 2023"
-                link="/"
-                img={minesweeper}
-            />
-            <Game
-                title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                date="March 22, 2023"
-                link="/"
+                link="testing"
                 img={minesweeper}
             />
         </ul>

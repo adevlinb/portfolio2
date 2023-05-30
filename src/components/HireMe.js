@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CircleTextMe from "./Icons";
+import { CircleTextMe } from "./Icons";
 
 
 export default function HireMe() {

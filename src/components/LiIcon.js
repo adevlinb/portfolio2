@@ -1,4 +1,4 @@
-import { motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function LiIcon({reference, scrollYProgress}) {
 	if (!reference) return null;

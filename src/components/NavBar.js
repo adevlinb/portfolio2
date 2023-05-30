@@ -1,4 +1,4 @@
-import { GithubIcon, LinkedInIcon, TwitterIcon, PinterestIcon, SunIcon, MoonIcon } from './Icons';
+import { GithubIcon, LinkedInIcon, TwitterIcon, XylaIcon, SunIcon, MoonIcon } from './Icons';
 import Logo from './Logo';
 import Link from "next/link"
 import { useState } from 'react';
@@ -68,13 +68,13 @@ export const NavBar = () => {
 					<CustomMobileLink href="/" title="Home" className='' toggle={handleClick}/>
 					<CustomMobileLink href="/about" title="About" className='' toggle={handleClick}/>
 					<CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick}/>
-					<CustomMobileLink href="/articles" title="Articles" className='' toggle={handleClick}/>
+					<CustomMobileLink href="/games" title="Games" className='' toggle={handleClick}/>
 				</nav>
 				<nav className='flex items-center justify-center flex-wrap mt-4'>
 					<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:3}} whileHover={{y:-2}} className={iconInfo}><TwitterIcon /></motion.a>
 					<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={`${iconInfo} rounded-full dark:bg-dark bg-light`}><GithubIcon /></motion.a>
 					<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={iconInfo}><LinkedInIcon /></motion.a>
-					<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={iconInfo}><PinterestIcon /></motion.a>
+					<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={`w-2 h-2 bg-primary`}><XylaIcon /></motion.a>
 					<button 
 					onClick={() => setMode(mode === "light" ? "dark" : "light")}
 					className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark" }`}>
@@ -91,13 +91,12 @@ export const NavBar = () => {
 				<CustomLink href="/" title="Home" className='mr-4' />
 				<CustomLink href="/about" title="About" className='mx-4'/>
 				<CustomLink href="/projects" title="Projects" className='mx-4'/>
-				<CustomLink href="/articles" title="Articles" className='ml-4'/>
+				<CustomLink href="/games" title="Games" className='ml-4'/>
 			</nav>
 			<nav className='flex items-center justify-center flex-wrap'>
-				<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:3}} whileHover={{y:-2}} className={iconInfo}><TwitterIcon /></motion.a>
-				<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={iconInfo}><GithubIcon /></motion.a>
-				<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={iconInfo}><LinkedInIcon /></motion.a>
-				<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={iconInfo}><PinterestIcon /></motion.a>
+				<motion.a href="https://github.com/adevlinb" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={iconInfo}><GithubIcon /></motion.a>
+				<motion.a href="https://www.linkedin.com/in/devlin-booth/" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={iconInfo}><LinkedInIcon /></motion.a>
+				<motion.a href="https://xyla-books.herokuapp.com/" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={`${iconInfo} flex items-center justify-center -translate-y-8 bg-blue-400  rounded-lg`}><XylaIcon className={`w-8 h-8`} fill={`#FF1493`} /></motion.a>
 				<button 
 				onClick={() => setMode(mode === "light" ? "dark" : "light")}
 				className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark" }`}>

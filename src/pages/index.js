@@ -20,8 +20,7 @@ export default function Home() {
         <Layout className='pt-0 md:p-16 sm:pt-8'>
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className='w-40 md:w-1/2'>
-                <img src="https://i.imgur.com/WoG57t1.png" alt="portfolio" className="w-full h-full  md:inline-block md:w-full" priority 
-                    sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"/>
+                <img src="https://i.imgur.com/WoG57t1.png" width="100vh" alt="portfolio" className="w-full h-full  md:inline-block md:w-full" sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"/>
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
                 <AnimatedText 

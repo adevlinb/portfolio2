@@ -8,7 +8,7 @@ export default function Footer() {
             <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
             <div className="flex items-center lg:py-2">
                 Built With <span className="text-primary dark:text-primaryDark text-2x1 px-1">&hearts;</span>
-                By&nbsp;<Link href="https://xyla-books.herokuapp.com/" target="_blank" className="underline underline-offset-2">ADevlinB</Link>
+                By&nbsp;<Link href="mailto:adevlin.booth@gmail.com" target="_blank" className="underline underline-offset-2">ADevlinB</Link>
             </div>
             <Link href="https://www.linkedin.com/in/devlin-booth/" target="_blank" className="underline underline-offset-2">LinkinIn</Link>
         </Layout>

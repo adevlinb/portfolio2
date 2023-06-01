@@ -19,7 +19,7 @@ const FramerImage = motion(Image)
 
 const FeaturedProject = ({ type, title, summary, image, link, github, project, children }) => {
     return (
-        <article className="w-full flex items-center justify-between rounded-3xl border border-solid
+        <article className="w-full flex  justify-between rounded-3xl border border-solid
             border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark dark:border-light
             lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
             <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"/>
@@ -31,7 +31,7 @@ const FeaturedProject = ({ type, title, summary, image, link, github, project, c
                     sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
                 />
             </Link> 
-            <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+            <div className="w-1/2 h-[100%] flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
                 <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base flex">{type}</span>
                         
                     <Link href={link} target="_blank" className="hover:underline underline-offset-2 flex">
@@ -131,6 +131,17 @@ export default function projects() {
                         <Project title="[Nifty-Box]" image={niftyBox} link="https://codesandbox.io/s/nifty-dogs-sandbox-n2kdql" github="/" type="Featured Project" project="https://codesandbox.io/s/nifty-dogs-sandbox-n2kdql">
 
                         </Project>
+                    </div>
+                    <div className="col-span-12">
+                        <FeaturedProject
+                            title="New Portfolio"
+                            summary="Take a peek at the tech and structure of my newest portfolio!"
+                            image={instacats}
+                            link="/"
+                            github="https://github.com/adevlinb/portfolio2"
+                            type="Featured Project"
+                            project="/"
+                        />
                     </div>
                 </div>
             </Layout>

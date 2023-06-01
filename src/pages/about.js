@@ -3,7 +3,7 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Layout from "@/components/Layout";
 import Skills from "@/components/Skills";
-import { useMotionValue, useSpring, useInView } from "framer-motion";
+import { useMotionValue, useSpring, useInView, motion } from "framer-motion";
 import Head from "next/head";
 import { useEffect, useRef } from "react";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -27,6 +27,27 @@ const AnimatedNumbers = ({value}) => {
     return <span ref={ref}></span>
 }
 
+const WavingHand = () => {
+  
+    return (
+      <motion.div
+        style={{scale: 2, marginLeft: "20px"}}
+        whileHover={{ scale: 3 }}
+        animate={{ rotate: [-10, 30] }}
+            // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+            transition={{
+                repeat: Infinity,
+                repeatType: "reverse",
+                duration: 1.5,
+                easeInOut: [0, 0.33, 0.67, 0.99]
+              }}
+         >
+        👋
+      </motion.div>
+    );
+
+  };
+
 
 export default function about() {
   return (
@@ -42,7 +63,7 @@ export default function about() {
                 <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
                     <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
                         <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
-                        <p className="font-medium mt-2 text-2xl">Hi!! 👋</p>
+                        <div className="flex items-center justify-center"><p className="inline-block font-medium mt-2 text-2xl">Hi!! </p><WavingHand /></div>
                         <p className="font-medium mt-2 mb-2"> I'm Devlin, a full stack software engineer with a passion for creating functional
                             and user-centered digital experiences and playing dodgeball! With 2 years of experience, I am hungry for
                             new and innovative ways to use software to bring concepts to reality.</p>

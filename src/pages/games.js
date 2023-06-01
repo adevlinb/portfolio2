@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import minesweeper from "../../public/images/projects/minesweeper.png";
-import { APIIcon, AWSIcon, CSSIcon, CodeSandboxIcon, DjangoIcon, DjangoRestIcon, DockerIcon, GithubIcon, HtmlIcon, JavascriptIcon, LinkedInIcon, MongoDbIcon, NodeJSIcon, PostgresqlIcon, PythonIcon, ReactIcon, ReadMeIcon, XylaIcon } from '@/components/Icons';
+import { CSSIcon, HtmlIcon, JavascriptIcon, LinkedInIcon, MongoDbIcon, NodeJSIcon, PostgresqlIcon, PythonIcon, ReactIcon, ReadMeIcon, TailWindIcon, XylaIcon } from '@/components/Icons';
 
 const FramerImage = motion(Image);
 
@@ -111,7 +111,14 @@ export default function Games() {
                     link="https://adevlinb.github.io/minesweeper/"
                 />
             </ul>
-        <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">All Games</h2>
+        <div className="font-bold flex justify-between w-full my-8 mt-32">
+            <h1 className="pl-8 text-6xl">All Games</h1>
+            <div className='flex w-[25%] items-end justify-evenly'>
+                <JavascriptIcon />
+                <HtmlIcon />
+                <CSSIcon />
+            </div>
+        </div>
         <ul>
             
             <Game 
@@ -121,29 +128,11 @@ export default function Games() {
                 img={minesweeper}
                 link="https://adevlinb.github.io/Mastermind/"
                 date="March 22, 2023">
-                    <AWSIcon />
-                    <APIIcon />
-                    <CodeSandboxIcon />
-                    <CSSIcon />
-                    <DjangoRestIcon />
-                    <DjangoIcon />
-                    <DockerIcon />
-                    <GithubIcon  />
-                    <HtmlIcon />
-                    <JavascriptIcon />
-                    <LinkedInIcon />
-                    <MongoDbIcon />
-                    <NodeJSIcon />
-                    <PostgresqlIcon />
-                    <PythonIcon />
-                    <ReactIcon /> 
-                    <ReadMeIcon />
-                    <XylaIcon />
             </Game>
             <Game
                 title="Rock, Paper, Scissors"
                 date="March 22, 2023"
-                link="/"
+                link="https://adevlinb.github.io/Rock-Paper-Scissors/"
                 img={minesweeper}
             />
             <Game
@@ -155,7 +144,7 @@ export default function Games() {
             <Game
                 title="Tic-Tac-Toe"
                 date="March 22, 2023"
-                link="/"
+                link="https://adevlinb.github.io/Tic-Tac-Toe/"
                 img={minesweeper}
             />
             <Game

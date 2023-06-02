@@ -7,6 +7,12 @@ import Image from 'next/image';
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import minesweeper from "../../public/images/projects/minesweeper.png";
+import ttt from "../../public/images/projects/ttt.png";
+import rpsWin from "../../public/images/projects/rps-win.png";
+import mastermind from "../../public/images/projects/mastermind.png";
+import connectFour from "../../public/images/projects/connect-four.png";
+import checkers from "../../public/images/projects/checkers.png";
+
 import { CSSIcon, HtmlIcon, JavascriptIcon, LinkedInIcon, MongoDbIcon, NodeJSIcon, PostgresqlIcon, PythonIcon, ReactIcon, ReadMeIcon, TailWindIcon, XylaIcon } from '@/components/Icons';
 
 const FramerImage = motion(Image);
@@ -69,7 +75,7 @@ const FeaturedGame = ({img, title, time, summary, link}) => {
         <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:border-light dark:bg-dark'>
             <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light"/>
             <Link href={link} target="_blank" className="w-full cursor-pointer inline-block overflow-hidden rounded-lg">
-                <FramerImage src={img} alt={title} className="w-full h-auto" 
+                <FramerImage src={img} alt={title} className="w-full h-auto  object-cover object-center sm:h-[55vmin] md:h-[56vmin] lg:h-[57vmin] xl:h-[58vmin] 2xl:h-[59vmin]" 
                     whileHover={{scale:1.05}}
                     transition={{duration:0.2}}
                     sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
@@ -100,8 +106,8 @@ export default function Games() {
                     title="Checkers"
                     summary="The family favorite! Checkers"
                     time="9 min read"
-                    img={minesweeper}
-                    link="/"
+                    img={checkers}
+                    link="https://adevlinb.github.io/checkers/"
                     />
                 <FeaturedGame 
                     title="Minesweeper"
@@ -125,27 +131,27 @@ export default function Games() {
                 title="Mastermind"
                 summmary="Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience."
                 time="10 min read"
-                img={minesweeper}
+                img={mastermind}
                 link="https://adevlinb.github.io/Mastermind/"
                 date="March 22, 2023">
             </Game>
             <Game
                 title="Rock, Paper, Scissors"
                 date="March 22, 2023"
-                link="https://adevlinb.github.io/Rock-Paper-Scissors/"
-                img={minesweeper}
+                link="https://adevlinb.github.io/rps/"
+                img={rpsWin}
             />
             <Game
                 title="Connect Four"
                 date="March 22, 2023"
-                link="/"
-                img={minesweeper}
+                link="https://adevlinb.github.io/connect-four/"
+                img={connectFour}
             />
             <Game
                 title="Tic-Tac-Toe"
                 date="March 22, 2023"
                 link="https://adevlinb.github.io/Tic-Tac-Toe/"
-                img={minesweeper}
+                img={ttt}
             />
             <Game
                 title="Spaceman"

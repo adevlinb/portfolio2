@@ -14,6 +14,7 @@ import vulnerabilities from "public/images/projects/vulnerabilities.png";
 import niftyDocs from "public/images/projects/nifty-docs.png";
 import niftyBox from "public/images/projects/nifty-box.png";
 import niftyDogs from "public/images/projects/nifty-dogs.png";
+import portfolio from "public/images/projects/portfolio.png";
 
 const FramerImage = motion(Image)
 
@@ -24,7 +25,7 @@ const FeaturedProject = ({ type, title, summary, image, link, github, project, c
             lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
             <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"/>
             <Link href={link} target="_blank" className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
-                <FramerImage src={image} alt={title} className="w-full h-auto"
+                <FramerImage src={image} alt={title} className="w-full h-auto object-cover min-h-[25vmin]"
                     whileHover={{scale:1.05}}
                     transition={{duration:0.2}}
                     priority 
@@ -52,7 +53,7 @@ const Project = ({ type, title, image, link, github, project }) => {
         <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-6 relative dark:bg-dark dark:border-light xs:p-4">
             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] sm:h-[102%] xs:rounded-[1.5rem]"/>
             <Link href={link} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
-                <FramerImage src={image} alt={title} className="w-full h-auto"
+                <FramerImage src={image} alt={title} className="w-full h-auto object-cover sm:h-[15vmin] md:h-[20vmin] lg:h-[25vmin] xl:h-[30vmin] 2xl:h-[35vmin]"
                     whileHover={{scale:1.05}}
                     transition={{duration:0.2}}
                     priority 
@@ -136,7 +137,7 @@ export default function projects() {
                         <FeaturedProject
                             title="New Portfolio"
                             summary="Take a peek at the tech and structure of my newest portfolio!"
-                            image={instacats}
+                            image={portfolio}
                             link="/"
                             github="https://github.com/adevlinb/portfolio2"
                             type="Featured Project"

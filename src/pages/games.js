@@ -62,9 +62,6 @@ const Game = ({img, title, date, link, children}) => {
                 items-center justify-between bg-light text-dark first:mt-0 border dark:text-light
                 border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark sm:flex-col">
             <MovingImg title={title} img={img} link={link}/>
-            <div className='flex justify-center'>
-                {children}
-            </div>
             <span className="text-primary font-semibold dark:text-primaryDark sm:self-start xs:text-sm">{date}</span>
         </motion.li>
     )
@@ -105,14 +102,14 @@ export default function Games() {
                 <FeaturedGame 
                     title="Checkers"
                     summary="The family favorite! Checkers"
-                    time="9 min read"
+                    time="Tag Line Here"
                     img={checkers}
                     link="https://adevlinb.github.io/checkers/"
                     />
                 <FeaturedGame 
                     title="Minesweeper"
-                    summmary="Can't wait to show y'all how to play minesweeper!!"
-                    time="10 min read"
+                    summary="Can't wait to show y'all how to play minesweeper!!"
+                    time="Tag Line Here"
                     img={minesweeper}
                     link="https://adevlinb.github.io/minesweeper/"
                 />
@@ -123,46 +120,41 @@ export default function Games() {
                 <JavascriptIcon />
                 <HtmlIcon />
                 <CSSIcon />
+                <TailWindIcon className={""} titleClass={"!mt-2.5"} divClass={"mx-2"}/>
             </div>
         </div>
         <ul>
             
             <Game 
                 title="Mastermind"
-                summmary="Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience."
-                time="10 min read"
                 img={mastermind}
                 link="https://adevlinb.github.io/Mastermind/"
-                date="March 22, 2023">
-            </Game>
+                date="Can you crack the code!?" />
             <Game
                 title="Rock, Paper, Scissors"
-                date="March 22, 2023"
+                date="TagLine Here"
                 link="https://adevlinb.github.io/rps/"
-                img={rpsWin}
-            />
+                img={rpsWin}/>
             <Game
                 title="Connect Four"
-                date="March 22, 2023"
+                date="Go for it! Connect Four!"
                 link="https://adevlinb.github.io/connect-four/"
-                img={connectFour}
-            />
+                img={connectFour}/>
             <Game
                 title="Tic-Tac-Toe"
-                date="March 22, 2023"
+                date="Tic Tac Toe- The original brain game!"
                 link="https://adevlinb.github.io/Tic-Tac-Toe/"
-                img={ttt}
-            />
+                img={ttt}/>
             <Game
                 title="Spaceman"
-                date="March 22, 2023"
+                date="Intergalactic Hangman! Can you guess the word!?"
                 link="/"
                 img={minesweeper}
             />
             <Game
                 title="Concentration"
-                date="March 22, 2023"
-                link="testing"
+                date="Flip the cards and find the matches!"
+                link="/"
                 img={minesweeper}
             />
         </ul>

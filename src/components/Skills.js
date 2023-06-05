@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MongoDbIcon, PostgresqlIcon, ReactIcon, NodeJSIcon, JavascriptIcon, HtmlIcon, PythonIcon, CSSIcon, APIIcon, DjangoIcon, DockerIcon, AWSIcon, ReadMeIcon, TailWindIcon, CodeSandboxIcon } from "./Icons";
+import { MongoDbIcon, PostgresqlIcon, ReactIcon, NodeJSIcon, JavascriptIcon, HtmlIcon, PythonIcon, CSSIcon, APIIcon, DjangoIcon, DockerIcon, AWSIcon, ReadMeIcon, TailWindIcon, CodeSandboxIcon, NextJsIcon } from "./Icons";
 
 const Skill = ({children, x, y}) => {
     return (
@@ -40,6 +40,7 @@ export default function Skills() {
                 <Skill x="-32vw" y="-13.5vw"><ReadMeIcon className={"!h-5"} /></Skill>
                 <Skill x="24.5vw" y="-24.5vw"><PostgresqlIcon className={"!h-5"} /></Skill>
                 <Skill x="-18.5vw" y="-27.5vw"><CodeSandboxIcon className={"!h-5"} /></Skill>
+                <Skill x="5vw" y="-27vw"><NextJsIcon className={"!h-5"} /></Skill>
             </div>
         </div>
     )

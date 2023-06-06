@@ -157,13 +157,13 @@ export default function Games() {
                 link="/"
                 img={minesweeper}
                 />
-            <Game
+            {/* <Game
                 title="Concentration"
                 date="Flip the cards and find the matches!"
-                github="https://github.com/adevlinb/spaceman"
+                github="/"
                 link="/"
                 img={minesweeper}
-            />
+            /> */}
         </ul>
         </Layout>
     </main> 

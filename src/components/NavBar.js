@@ -71,9 +71,9 @@ export const NavBar = () => {
 					<CustomMobileLink href="/games" title="Games" className='' toggle={handleClick}/>
 				</nav>
 				<nav className='flex items-center justify-evenly flex-wrap mt-4'>
-					<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={`m-4 rounded-full dark:bg-dark bg-light`}><GithubIcon /></motion.a>
-					<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={`${iconInfo}`}><LinkedInIcon /></motion.a>
-					<motion.a href="https://linkedin.com" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={`${iconInfo}`} ><XylaIcon fill={`#FF1493`} /></motion.a>
+					<motion.a href="https://github.com/adevlinb" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={`m-4 rounded-full dark:bg-dark bg-light`}><GithubIcon /></motion.a>
+					<motion.a href="https://www.linkedin.com/in/devlin-booth/" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={`${iconInfo}`}><LinkedInIcon /></motion.a>
+					<motion.a href="https://xyla-books.herokuapp.com/" target="_blank" whileTap={{scale:0.9}} whileHover={{y:-2}} className={`${iconInfo}`} ><XylaIcon fill={`#FF1493`} /></motion.a>
 					<button 
 					onClick={() => setMode(mode === "light" ? "dark" : "light")}
 					className={`flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark" }`}>

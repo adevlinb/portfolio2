@@ -12,6 +12,7 @@ import rpsWin from "../../public/images/projects/rps-win.png";
 import mastermind from "../../public/images/projects/mastermind.png";
 import connectFour from "../../public/images/projects/connect-four.png";
 import checkers from "../../public/images/projects/checkers.png";
+import { GithubIcon } from '@/components/Icons';
 
 import { CSSIcon, HtmlIcon, JavascriptIcon, LinkedInIcon, MongoDbIcon, NodeJSIcon, PostgresqlIcon, PythonIcon, ReactIcon, ReadMeIcon, TailWindIcon, XylaIcon } from '@/components/Icons';
 
@@ -51,7 +52,7 @@ const MovingImg = ({title, img, link}) => {
     )
 }
 
-const Game = ({img, title, date, link, children}) => {
+const Game = ({img, title, date, link, github}) => {
     return ( 
         <motion.li 
             initial={{y:175}}
@@ -61,13 +62,16 @@ const Game = ({img, title, date, link, children}) => {
             className="relative w-full p-4 py-6 my-4 rounded-xl flex 
                 items-center justify-between bg-light text-dark first:mt-0 border dark:text-light
                 border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark sm:flex-col">
-            <MovingImg title={title} img={img} link={link}/>
-            <span className="text-primary font-semibold dark:text-primaryDark sm:self-start xs:text-sm">{date}</span>
+            <div className='flex items-center'>
+                <motion.a href={github} target="_blank"  whileHover={{scale:1.5}} className="mr-1"><GithubIcon className="scale-[65%]" /></motion.a>
+                <MovingImg title={title} img={img} link={link}/>
+            </div>
+                <span className="text-primary font-semibold dark:text-primaryDark sm:self-start xs:text-sm">{date}</span>
         </motion.li>
     )
 }
 
-const FeaturedGame = ({img, title, time, summary, link}) => {
+const FeaturedGame = ({img, title, time, summary, link, github}) => {
     return (
         <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:border-light dark:bg-dark'>
             <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light"/>
@@ -101,15 +105,15 @@ export default function Games() {
             <ul className='grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16 '>
                 <FeaturedGame 
                     title="Checkers"
-                    summary="The family favorite! Checkers"
-                    time="Tag Line Here"
+                    summary=""
+                    time="The family favorite! Checkers!"
                     img={checkers}
                     link="https://adevlinb.github.io/checkers/"
                     />
                 <FeaturedGame 
                     title="Minesweeper"
-                    summary="Can't wait to show y'all how to play minesweeper!!"
-                    time="Tag Line Here"
+                    summary=""
+                    time="Click, Click, Boom!"
                     img={minesweeper}
                     link="https://adevlinb.github.io/minesweeper/"
                 />
@@ -120,7 +124,6 @@ export default function Games() {
                 <JavascriptIcon />
                 <HtmlIcon />
                 <CSSIcon />
-                <TailWindIcon className={""} titleClass={"!mt-2.5"} divClass={"mx-2"}/>
             </div>
         </div>
         <ul>
@@ -128,32 +131,38 @@ export default function Games() {
             <Game 
                 title="Mastermind"
                 img={mastermind}
+                github="https://github.com/adevlinb/Tic-Tac-Toe"
                 link="https://adevlinb.github.io/Mastermind/"
                 date="Can you crack the code!?" />
             <Game
                 title="Rock, Paper, Scissors"
-                date="TagLine Here"
+                date="'Rock! Paper! Scissors! Shoot!' "
+                github="https://github.com/adevlinb/Tic-Tac-Toe"
                 link="https://adevlinb.github.io/rps/"
                 img={rpsWin}/>
             <Game
                 title="Connect Four"
+                github="https://github.com/adevlinb/Tic-Tac-Toe"
                 date="Go for it! Connect Four!"
                 link="https://adevlinb.github.io/connect-four/"
                 img={connectFour}/>
             <Game
                 title="Tic-Tac-Toe"
-                date="Tic Tac Toe- The original brain game!"
+                github="https://github.com/adevlinb/Tic-Tac-Toe"
+                date="The original brain game!"
                 link="https://adevlinb.github.io/Tic-Tac-Toe/"
                 img={ttt}/>
             <Game
                 title="Spaceman"
                 date="Intergalactic Hangman! Can you guess the word!?"
+                github="https://github.com/adevlinb/Tic-Tac-Toe"
                 link="/"
                 img={minesweeper}
-            />
+                />
             <Game
                 title="Concentration"
                 date="Flip the cards and find the matches!"
+                github="https://github.com/adevlinb/Tic-Tac-Toe"
                 link="/"
                 img={minesweeper}
             />

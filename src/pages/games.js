@@ -12,9 +12,7 @@ import rpsWin from "../../public/images/projects/rps-win.png";
 import mastermind from "../../public/images/projects/mastermind.png";
 import connectFour from "../../public/images/projects/connect-four.png";
 import checkers from "../../public/images/projects/checkers.png";
-import { GithubIcon } from '@/components/Icons';
-
-import { CSSIcon, HtmlIcon, JavascriptIcon, LinkedInIcon, MongoDbIcon, NodeJSIcon, PostgresqlIcon, PythonIcon, ReactIcon, ReadMeIcon, TailWindIcon, XylaIcon } from '@/components/Icons';
+import { CSSIcon, HtmlIcon, JavascriptIcon, GithubIcon } from '@/components/Icons';
 
 const FramerImage = motion(Image);
 
@@ -66,12 +64,12 @@ const Game = ({img, title, date, link, github}) => {
                 <motion.a href={github} target="_blank"  whileHover={{scale:1.5}} className="mr-1"><GithubIcon className="scale-[65%]" /></motion.a>
                 <MovingImg title={title} img={img} link={link}/>
             </div>
-                <span className="text-primary font-semibold dark:text-primaryDark sm:self-start xs:text-sm">{date}</span>
+            <span className="text-primary font-semibold dark:text-primaryDark sm:self-start xs:text-sm">{date}</span>
         </motion.li>
     )
 }
 
-const FeaturedGame = ({img, title, time, summary, link, github}) => {
+const FeaturedGame = ({img, title, time, link, github}) => {
     return (
         <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:border-light dark:bg-dark'>
             <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light"/>
@@ -82,11 +80,11 @@ const FeaturedGame = ({img, title, time, summary, link, github}) => {
                     sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
                 />
             </Link> 
-            <Link href={link} target="_blank">
-                <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline sm:text-lg'>{title}</h2>
-            </Link>
-            <p className='text-sm mb-2'>{summary}</p> 
-            <span className='text-primary font-semibold dark:text-primaryDark'>{time}</span>
+                <Link href={link} target="_blank"><h2 className='capitalize text-2xl font-bold my-2 hover:underline sm:text-lg'>{title}</h2></Link>
+            <div className='flex items-center justify-between mt-2'>
+                <span className='text-primary font-semibold dark:text-primaryDark'>{time}</span>
+                <motion.a href={github} target="_blank"  whileHover={{scale:1.5}} className="mr-1"><GithubIcon className="scale-[65%]" /></motion.a>
+            </div>
         </li>
     )
 }
@@ -105,14 +103,14 @@ export default function Games() {
             <ul className='grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16 '>
                 <FeaturedGame 
                     title="Checkers"
-                    summary=""
+                    github="https://github.com/adevlinb/checkers"
                     time="The family favorite! Checkers!"
                     img={checkers}
                     link="https://adevlinb.github.io/checkers/"
                     />
                 <FeaturedGame 
                     title="Minesweeper"
-                    summary=""
+                    github="https://github.com/adevlinb/minesweeper"
                     time="Click, Click, Boom!"
                     img={minesweeper}
                     link="https://adevlinb.github.io/minesweeper/"
@@ -131,18 +129,18 @@ export default function Games() {
             <Game 
                 title="Mastermind"
                 img={mastermind}
-                github="https://github.com/adevlinb/Tic-Tac-Toe"
+                github="https://github.com/adevlinb/Mastermind"
                 link="https://adevlinb.github.io/Mastermind/"
                 date="Can you crack the code!?" />
             <Game
                 title="Rock, Paper, Scissors"
                 date="'Rock! Paper! Scissors! Shoot!' "
-                github="https://github.com/adevlinb/Tic-Tac-Toe"
+                github="https://github.com/adevlinb/rps"
                 link="https://adevlinb.github.io/rps/"
                 img={rpsWin}/>
             <Game
                 title="Connect Four"
-                github="https://github.com/adevlinb/Tic-Tac-Toe"
+                github="https://github.com/adevlinb/connect-four"
                 date="Go for it! Connect Four!"
                 link="https://adevlinb.github.io/connect-four/"
                 img={connectFour}/>
@@ -155,14 +153,14 @@ export default function Games() {
             <Game
                 title="Spaceman"
                 date="Intergalactic Hangman! Can you guess the word!?"
-                github="https://github.com/adevlinb/Tic-Tac-Toe"
+                github="https://github.com/adevlinb/spaceman"
                 link="/"
                 img={minesweeper}
                 />
             <Game
                 title="Concentration"
                 date="Flip the cards and find the matches!"
-                github="https://github.com/adevlinb/Tic-Tac-Toe"
+                github="https://github.com/adevlinb/spaceman"
                 link="/"
                 img={minesweeper}
             />

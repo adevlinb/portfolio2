@@ -58,8 +58,8 @@ const Game = ({img, title, date, link, github}) => {
             viewport={{once:true}}
             sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
             className="relative w-full p-4 py-6 my-4 rounded-xl flex 
-                items-center justify-between bg-light text-dark first:mt-0 border dark:text-light
-                border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark sm:flex-col">
+                items-center justify-between  bg-light text-dark first:mt-0 border dark:text-light
+                border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark sm:flex-col sm:items-start">
             <div className='flex items-center'>
                 <motion.a href={github} target="_blank"  whileHover={{scale:1.5}} className="mr-1"><GithubIcon className="scale-[65%]" /></motion.a>
                 <MovingImg title={title} img={img} link={link}/>

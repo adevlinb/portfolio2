@@ -64,18 +64,18 @@ export default function about() {
                     <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
                         <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
                         <div className="flex items-center justify-center"><p className="inline-block font-medium mt-2 text-2xl">Hi!! </p><WavingHand /></div>
-                        <p className="font-medium mt-2 mb-2"> I'm Devlin, a full stack software engineer with a passion for creating functional
+                        <p className="font-medium mt-2 mb-2"> I&apos;m Devlin, a full stack software engineer with a passion for creating functional
                             and user-centered digital experiences and playing dodgeball! With 2 years of experience, I am hungry for
                             new and innovative ways to use software to bring concepts to reality.</p>
-                        <p className="font-medium mt-2 mb-2">Design is about more than just making things look pretty – it's about solving problems and
+                        <p className="font-medium mt-2 mb-2">Design is about more than just making things look pretty – it&apos;s about solving problems and
                             creating intuitive, enjoyable experiences for users.</p>
-                        <p className="font-medium mt-2">Whether I'm working on a website, mobile app, or
+                        <p className="font-medium mt-2">Whether I&apos;m working on a website, mobile app, or
                             other digital product, I bring my commitment to design excellence and user-centered thinking to
                             every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.</p>
                     </div>
                     <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
                         <div className="absolute top-0 -right-2.5 -z-10 w-[102%] h-[103%] rounded-[1.5rem] bg-dark dark:bg-light"/>
-                        <img src="https://i.imgur.com/WoG57t1.png" alt="portfolio" className="w-full h-auto rounded-2xl bg-dark"/>
+                        <Image src="https://i.imgur.com/WoG57t1.png" alt="portfolio" className="w-full h-auto rounded-2xl bg-dark"/>
                     </div>
                     <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 ">
                         <div className="flex flex-col items-end justify-center xl:items-center">

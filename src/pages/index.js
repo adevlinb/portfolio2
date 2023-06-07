@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
 		<Head>
-			<title>Devlin's Portfolio</title>
+			<title>Devlin&apos;s Portfolio</title>
 			<meta name="Devlin Booth" content="Software Engineering Portfolio" />
 		</Head>
 		<TransitionEffect />

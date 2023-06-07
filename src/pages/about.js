@@ -3,6 +3,7 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Layout from "@/components/Layout";
 import Skills from "@/components/Skills";
+import Image from "next/image";
 import { useMotionValue, useSpring, useInView, motion } from "framer-motion";
 import Head from "next/head";
 import { useEffect, useRef } from "react";

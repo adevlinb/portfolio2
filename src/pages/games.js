@@ -117,12 +117,12 @@ export default function Games() {
                     link="https://adevlinb.github.io/minesweeper/"
                 />
             </ul>
-        <div className="font-bold flex justify-between w-full my-8 mt-32">
+        <div className="font-bold flex justify-between w-full my-8 mt-32 sm:flex-col sm:items-center">
             <h1 className="pl-8 text-6xl">All Games</h1>
             <div className='flex w-[25%] items-end justify-evenly'>
-                <JavascriptIcon />
-                <HtmlIcon />
-                <CSSIcon />
+                <JavascriptIcon divClass={"m-4"}/>
+                <HtmlIcon divClass={"m-4"}/>
+                <CSSIcon divClass={"m-4"}/>
             </div>
         </div>
         <ul>

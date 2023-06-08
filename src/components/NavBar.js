@@ -1,4 +1,4 @@
-import { GithubIcon, LinkedInIcon, TwitterIcon, XylaIcon, SunIcon, MoonIcon } from './Icons';
+import { GithubIcon, LinkedInIcon, XylaIcon, SunIcon, MoonIcon } from './Icons';
 import Logo from './Logo';
 import Link from "next/link"
 import { useState } from 'react';

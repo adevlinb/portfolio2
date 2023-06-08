@@ -8,6 +8,7 @@ import { useMotionValue, useSpring, useInView, motion } from "framer-motion";
 import Head from "next/head";
 import { useEffect, useRef } from "react";
 import TransitionEffect from "@/components/TransitionEffect";
+import profilePic from "../../public/images/projects/profilepicpng.png";
 
 const AnimatedNumbers = ({value}) => {
     const ref = useRef(null)
@@ -76,7 +77,7 @@ export default function about() {
                     </div>
                     <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
                         <div className="absolute top-0 -right-2.5 -z-10 w-[102%] h-[103%] rounded-[1.5rem] bg-dark dark:bg-light"/>
-                        <Image src="https://i.imgur.com/WoG57t1.png" alt="portfolio" className="w-full h-auto rounded-2xl bg-dark"/>
+                        <Image src={profilePic} alt="portfolio" className="w-full h-auto rounded-2xl bg-dark"/>
                     </div>
                     <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 ">
                         <div className="flex flex-col items-end justify-center xl:items-center">

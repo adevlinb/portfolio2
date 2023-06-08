@@ -6,7 +6,7 @@ const Skill = ({children, x, y}) => {
         <motion.div className="flex items-center justify-center rounded-full absolute hover:underline
             font-semibold bg-light text-dark border-dark border-[1.5px] shadow-dark cursor-pointer
             px-5 py-2.5 dark:text-dark dark:bg-light lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 
-            xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold"
+             xs:text-dark xs:dark:text-light xs:font-bold"
         whileHover={{scale:1.5}}
         initial={{x:0, y:0}}
         viewport={{once:true}}
@@ -25,7 +25,7 @@ export default function Skills() {
                 lg:bg-circularDarkLg lg:dark:bg-circularDarkLg
                 md:bg-circularDarkMd md:dark:bg-circularDarkMd
                 sm:bg-circularDarkSm sm:dark:bg-circularDarkSm'>
-                <Skill x="0vw" y="0vw"><JavascriptIcon className={"!h-5"}/></Skill>
+                <Skill x="0vw" y="0vw"><JavascriptIcon className={"!h-5"} divClass={"bg-white"}/></Skill>
                 <Skill x="-23vw" y="2vw"><MongoDbIcon className={"!h-5"}/></Skill>
                 <Skill x="-7.5vw" y="28vw"><TailWindIcon  className={"!h-5"} /></Skill>
                 <Skill x="-9vw" y="14vw"><ReactIcon className={"!h-5"} /></Skill>

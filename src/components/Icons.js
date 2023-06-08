@@ -863,7 +863,7 @@ export const SunIcon = ({ className, ...rest }) => (
     height="1.5em"
     viewBox="0 0 24 24"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`${className}`}
   >
     <g
       fill="none"
@@ -1210,7 +1210,7 @@ export const LinkArrow = ({ className, ...rest }) => (
     width="2em"
     height="2em"
     viewBox="0 0 24 24"
-    className={`w-full h-auto ${className}`}
+    className={`${className}`}
     {...rest}
   >
     <path fill="none" d="M0 0h24v24H0z" />

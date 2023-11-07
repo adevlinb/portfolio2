@@ -13,6 +13,7 @@ import mastermind from "../../public/images/projects/mastermind.png";
 import connectFour from "../../public/images/projects/connect-four.png";
 import checkers from "../../public/images/projects/checkers.png";
 import spaceman from "../../public/images/projects/spaceman.png";
+import wordle from "../../public/images/projects/wordle.png"
 import { CSSIcon, HtmlIcon, JavascriptIcon, GithubIcon } from '@/components/Icons';
 
 const FramerImage = motion(Image);
@@ -126,6 +127,12 @@ export default function Games() {
             </div>
         </div>
         <ul>
+            <Game 
+                title="Wordle"
+                img={wordle}
+                github="https://github.com/adevlinb/wordle"
+                link="https://adevlinb.github.io/wordle/"
+                date="Can you guess the word?!" />
             <Game 
                 title="Mastermind"
                 img={mastermind}

@@ -95,7 +95,7 @@ export default function Games() {
   return (
     <>
     <Head>
-        <title>aDevlinb Potfolio! | Games Page</title>
+        <title>Potfolio | Games Page</title>
         <meta name="description" content="profile - Games page"/>
     </Head>
     <TransitionEffect />

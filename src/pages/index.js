@@ -30,7 +30,7 @@ export default function Home() {
 						Explore my latest projects and articles, showcasing my expertise in React.js and web development.
 					</p>
 					<div className='flex items-center self-start mt-2 lg:self-center'>
-						<Link href="/Devlin_Booth_Resume.pdf" target="_blank"
+						<Link href="/Devlin-Booth-Resume-Full.pdf" target="_blank"
 							className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg border-solid 
 							border-light border-2 text-lg font-semibold hover:bg-light hover:text-dark 
 							hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark 

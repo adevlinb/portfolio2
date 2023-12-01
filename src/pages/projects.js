@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { APIIcon, CSSIcon, CodeSandboxIcon, DjangoIcon, DockerIcon, GithubIcon, HtmlIcon, JavascriptIcon, MongoDbIcon, NextJsIcon, NodeJSIcon, PostgresqlIcon, PythonIcon, ReactIcon, ReadMeIcon, TailWindIcon } from "@/components/Icons";
+import { APIIcon, CSSIcon, CodeSandboxIcon, DjangoIcon, DockerIcon, GithubIcon, HtmlIcon, JavascriptIcon, MongoDbIcon, NextJsIcon, NodeJSIcon, PostgresqlIcon, PythonIcon, ReactIcon, ReadMeIcon, ReactNativeIcon, TailWindIcon, NumpyIcon, PandasIcon, JupyterIcon, ExpoIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import xyla from "public/images/projects/xyla.png";
@@ -15,6 +15,8 @@ import niftyDocs from "public/images/projects/nifty-docs.png";
 import niftyBox from "public/images/projects/nifty-box.png";
 import niftyDogs from "public/images/projects/nifty-dogs.png";
 import portfolio from "public/images/projects/portfolio.png";
+import datr912 from "public/images/projects/DATR-912.png";
+import donations from "public/images/projects/donationsLogo.png";
 
 const FramerImage = motion(Image)
 
@@ -81,7 +83,7 @@ const Project = ({ type, title, image, link, github, project, children }) => {
                 </div>
                 <div className="w-full mt-2 flex items-center justify-between">
                 <Link href={project} target="_blank" className="rounded-lg bg-dark text-light px-3 text-lg font-semibold border border-dark dark:border-light dark:bg-light dark:text-dark sm:px-4 sm:text-base  hover:bg-light hover:text-dark hover:border-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light">Visit</Link>
-                    <motion.a href={github} target="_blank" whileHover={{scale:1.5}} className="w-8 md:w-6"><GithubIcon /></motion.a>
+                <motion.a href={github} target="_blank" whileHover={{scale:1.5}} className="w-8 md:w-6"><GithubIcon /></motion.a>
                 </div>
             </div>
         </article>
@@ -103,6 +105,20 @@ export default function projects() {
             <Layout className="pt-16">
                 <AnimatedText text="Imagination Trumps Knowledge!" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"/>
                 <div className="grid grid-cols-12 gap-12 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+                    <div className="col-span-6 sm:col-span-12">
+                        <Project title="Data Science Capstone" image={datr912} link="https://git.generalassemb.ly/devlin-booth/datr-capstone" github="https://git.generalassemb.ly/devlin-booth/datr-capstone" type="Data Science" project="https://git.generalassemb.ly/devlin-booth/datr-capstone">
+                            <NumpyIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mr-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
+                            <PandasIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mx-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
+                            <JupyterIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"ml-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
+                        </Project>
+                    </div>
+                    <div className="col-span-6 sm:col-span-12">
+                        <Project title="Donations" image={donations} link="https://github.com/adevlinb/donations_app" github="https://github.com/adevlinb/donations_app" type="Full-stack" project="https://github.com/adevlinb/donations_app">
+                            <ReactNativeIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mr-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
+                            <ExpoIcon className={"scale-[65%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mx-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
+                            <MongoDbIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"ml-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
+                        </Project>
+                    </div>
                     <div className="col-span-12">
                         <FeaturedProject title="XYLA" summary="Social App for readers who want to be able to share recent experiences, comment on posts, and recommend books to friends!" image={xyla} link="https://xyla-books.herokuapp.com/" github="https://github.com/adevlinb/XYLA" type="Full-stack" project="https://xyla-books.herokuapp.com/" >
                             <ReactIcon className={"scale-[50%] "} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mr-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
@@ -125,7 +141,7 @@ export default function projects() {
                         </Project>
                     </div>
                     <div className="col-span-12">
-                        <FeaturedProject title="Instacats" summary="A fun app where peeps can post pics of their kitties and comment on their favorite posts!" image={instacats} link="/" github="https://github.com/adevlinb/instacats" type="Front-end" project="google.com">
+                        <FeaturedProject title="Instacats" summary="A fun app where peeps can post pics of their kitties and comment on their favorite posts!" image={instacats} link="https://github.com/adevlinb/instacats" github="https://github.com/adevlinb/instacats" type="Front-end" project="google.com">
                             <ReactIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mr-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
                             <APIIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mx-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
                         </FeaturedProject>

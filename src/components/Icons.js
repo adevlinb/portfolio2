@@ -1,3 +1,118 @@
+export const ExpoIcon = ({ className, titleClass, divClass, ...rest }) => (
+  <div className={`flex flex-col text-center items-center justify-start ${divClass}`}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Expo Icon"
+      width="2em"
+      height="2em"
+      baseProfile="basic"
+      viewBox="0 0 48 48"
+      {...rest}
+      className={`h-auto ${className}`}
+    >
+      <path
+        fill="#0277bd"
+        d="M22.916 19.6c.339-.493.71-.558 1.012-.558.3 0 .802.064 1.141.558 4.418 6.017 13.579 21.891 14.426 22.755 1.255 1.28 2.977.483 3.976-.969.986-1.43 1.259-2.434 1.259-3.504 0-.729-14.267-27.05-15.706-29.242C27.642 6.532 27.192 6 24.829 6H23.06c-2.359 0-2.7.532-4.081 2.638C17.538 10.834 3.27 37.155 3.27 37.884c0 1.072.272 2.074 1.259 3.504.999 1.452 2.721 2.252 3.976.969.847-.864 9.995-16.737 14.411-22.752V19.6z"
+      />
+    </svg>
+    <h5 className={`${titleClass} sm:mt-0.5 sm:text-dark text-[0.5em] mt-2.5 leading-[2px]`}>Expo</h5>
+  </div>
+)
+
+export const JupyterIcon = ({ className, titleClass, divClass, ...rest }) => (
+  <div className={`flex flex-col text-center items-center justify-start ${divClass}`}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Jupyter Icon"
+      width="2em"
+      height="2em"
+      viewBox="0 0 48 48"
+      {...rest}
+      className={`h-auto ${className}`}
+      >
+      <linearGradient
+        id="a"
+        x1={17.151}
+        x2={29.996}
+        y1={8.498}
+        y2={37.571}
+        gradientUnits="userSpaceOnUse"
+        >
+        <stop offset={0} stopColor="#f09701" />
+        <stop offset={1} stopColor="#e36001" />
+      </linearGradient>
+      <path
+        fill="url(#a)"
+        d="M8.108 18.006C10.534 11.579 16.724 7 24 7s13.466 4.579 15.892 11.006C36.653 14.6 30.757 12.313 24 12.313S11.347 14.6 8.108 18.006zM24 35.688c-6.757 0-12.653-2.287-15.892-5.693C10.534 36.421 16.724 41 24 41s13.466-4.579 15.892-11.006C36.653 33.4 30.757 35.688 24 35.688z"
+        />
+      <linearGradient
+        id="b"
+        x1={1.319}
+        x2={25.671}
+        y1={44.651}
+        y2={1.059}
+        gradientUnits="userSpaceOnUse"
+        >
+        <stop offset={0} stopColor="#a1aab3" />
+        <stop offset={1} stopColor="#8f979e" />
+      </linearGradient>
+      <path
+        fill="url(#b)"
+        d="M39.512 4.744a2.744 2.744 0 1 1-5.488 0 2.744 2.744 0 0 1 5.488 0zM10.976 40.415a3.293 3.293 0 1 0 0 6.586 3.293 3.293 0 0 0 0-6.586zM7.683 6.39a2.195 2.195 0 1 0 0 4.39 2.195 2.195 0 0 0 0-4.39z"
+        />
+    </svg>
+    <h5 className={`${titleClass} sm:mt-0.5 sm:text-dark text-[0.5em] mt-2.5 leading-[2px]`}>Jupyter</h5>
+  </div>
+)
+
+
+export const PandasIcon = ({ className, titleClass, divClass, ...rest }) => (
+  <div className={`flex flex-col text-center items-center justify-start ${divClass}`}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Pandas Icon"
+      width="2em"
+      height="2em"
+      baseProfile="basic"
+      viewBox="0 0 48 48"
+      {...rest}
+      className={`h-auto ${className}`}
+    >
+      <path fill="#1a237e" d="M18 4h5v10h-5zM18 25h5v10h-5z" />
+      <path fill="#fbc02d" d="M18 17h5v5h-5z" />
+      <path fill="#1a237e" d="M10 13h5v33h-5zM26 33h5v10h-5zM26 12h5v10h-5z" />
+      <path fill="#ff4081" d="M26 25h5v5h-5z" />
+      <path fill="#1a237e" d="M34 2h5v33h-5z" />
+    </svg>
+    <h5 className={`${titleClass} sm:mt-0.5 sm:text-dark text-[0.5em] mt-2.5 leading-[2px]`}>Pandas</h5>
+  </div>
+)
+
+export const NumpyIcon = ({ className, titleClass, divClass, ...rest }) => (
+  <div className={`flex flex-col text-center items-center justify-start ${divClass}`}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Num Py Icon"
+      width="2em"
+      height="2em"
+      preserveAspectRatio="xMidYMid"
+      viewBox="-9 0 274 274"
+      {...rest}
+      className={`h-auto ${className}`}
+    >
+      <path
+        fill="#4DABCF"
+        d="m191.548 186.292.06 60.52-53.705 26.8v-60.494l53.645-26.826ZM256 153.947v60.731l-45.805 22.86-.033-60.454 45.838-23.137Zm-64.533-48.66.06 59.885-53.625 26.647v-59.905l53.565-26.627Zm64.533-32.082v59.509l-45.851 23.309-.04-60.005L256 73.205Zm-126.262-7.04 47.933 24.195-49.731 24.975-47.028-23.62 48.826-25.55ZM63.065 32.511l45.718 23.077-48.938 25.543-46.954-23.58 50.174-25.04Zm130.69.35 49.243 24.69-44.04 22.12-48.032-24.228 42.83-22.582ZM128.233 0l44.33 22.225-42.506 22.694L84.377 21.88 128.232 0Z"
+      />
+      <path
+        fill="#4D77CF"
+        d="M118.944 131.914 82.77 113.728v78.606S38.533 98.207 34.434 89.752c-.528-1.091-2.703-2.288-3.259-2.578C23.243 83.009 0 71.235 0 71.235V210.11l32.154 17.188v-72.59s43.768 84.105 44.211 85.024c.443.92 4.84 9.784 9.533 12.897 6.253 4.139 33.053 20.255 33.053 20.255l-.007-140.97Z"
+      />
+    </svg>
+   <h5 className={`${titleClass} sm:mt-0.5 sm:text-dark text-[0.5em] mt-2.5 leading-[2px]`}>NumPy</h5>
+  </div>
+)
+
 export const JavascriptIcon = ({ className, titleClass, divClass, ...rest }) => (
   <div className={`flex flex-col text-center items-center justify-start ${divClass}`}>
   <svg
@@ -180,6 +295,25 @@ export const ReactIcon = ({ className, titleClass, divClass, ...rest }) => (
     </g>
   </svg>
   <h5 className={`${titleClass} sm:mt-0.5 sm:text-dark  text-[0.5em] mt-2.5 leading-[2px]`}>React</h5>
+  </div>
+)
+
+export const ReactNativeIcon = ({ className, titleClass, divClass, ...rest }) => (
+  <div className={`flex flex-col text-center items-center justify-start ${divClass}`}>
+  <svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 128 128" 
+  width="2em"
+  height="2em"
+  {...rest}
+  className={`h-auto ${className}`}
+  >
+    <g fill="#61DAFB">
+      <circle cx={64} cy={64} r={11.4} />
+      <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z" />
+    </g>
+  </svg>
+  <h5 className={`${titleClass} sm:mt-0.5 sm:text-dark  text-[0.5em] mt-2.5 leading-[2px]`}>React Native</h5>
   </div>
 )
 

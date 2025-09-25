@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { APIIcon, CSSIcon, CodeSandboxIcon, DjangoIcon, DockerIcon, GithubIcon, HtmlIcon, JavascriptIcon, MongoDbIcon, NextJsIcon, NodeJSIcon, PostgresqlIcon, PythonIcon, ReactIcon, ReadMeIcon, ReactNativeIcon, TailWindIcon, NumpyIcon, PandasIcon, JupyterIcon, ExpoIcon } from "@/components/Icons";
+import { APIIcon, CSSIcon, CodeSandboxIcon, DjangoIcon, DockerIcon, GithubIcon, HtmlIcon, JavascriptIcon, MongoDbIcon, NextJsIcon, NodeJSIcon, PostgresqlIcon, PythonIcon, ReactIcon, ReadMeIcon, ReactNativeIcon, TailWindIcon, NumpyIcon, PandasIcon, JupyterIcon, ExpoIcon, AWSIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import xyla from "public/images/projects/xyla.png";
@@ -110,7 +110,7 @@ export default function projects() {
                         <FeaturedProject title="Altadena Collective - Firemap" summary="Firemap build for the Altadena Collective organization with the intent in aiding residents in recovery due to Altadena, CA wildfires in January of 2025." image={altadena} link="https://altadena-firemap-39f5e8fa99c6.herokuapp.com/" github="https://github.com/adevlinb/altadena-september" type="Full-stack" project="https://altadena-firemap-39f5e8fa99c6.herokuapp.com/" >
                             <ReactIcon className={"scale-[50%] "} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mr-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
                             <NodeJSIcon className={"scale-[65%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mx-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
-                            <MongoDbIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"ml-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
+                            <AWSIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"ml-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
                         </FeaturedProject>
                     </div>
                     <div className="col-span-6 sm:col-span-12">

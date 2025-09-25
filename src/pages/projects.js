@@ -17,6 +17,7 @@ import niftyDogs from "public/images/projects/nifty-dogs.png";
 import portfolio from "public/images/projects/portfolio.png";
 import datr912 from "public/images/projects/DATR-912.png";
 import donations from "public/images/projects/donationsLogo.png";
+import altadena from "public/images/projects/altadena-firemap.png"
 
 const FramerImage = motion(Image)
 
@@ -105,6 +106,13 @@ export default function projects() {
             <Layout className="pt-16">
                 <AnimatedText text="Imagination Trumps Knowledge!" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"/>
                 <div className="grid grid-cols-12 gap-12 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+                    <div className="col-span-12">
+                        <FeaturedProject title="Altadena Collective - Firemap" summary="Firemap build for the Altadena Collective organization with the intent in aiding residents in recovery due to Altadena, CA wildfires in January of 2025." image={altadena} link="https://altadena-firemap-39f5e8fa99c6.herokuapp.com/" github="https://github.com/adevlinb/altadena-september" type="Full-stack" project="https://altadena-firemap-39f5e8fa99c6.herokuapp.com/" >
+                            <ReactIcon className={"scale-[50%] "} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mr-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
+                            <NodeJSIcon className={"scale-[65%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mx-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
+                            <MongoDbIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"ml-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
+                        </FeaturedProject>
+                    </div>
                     <div className="col-span-6 sm:col-span-12">
                         <Project title="Data Science Capstone" image={datr912} link="https://git.generalassemb.ly/devlin-booth/datr-capstone" github="https://git.generalassemb.ly/devlin-booth/datr-capstone" type="Data Science" project="https://git.generalassemb.ly/devlin-booth/datr-capstone">
                             <NumpyIcon className={"scale-[50%]"} titleClass={"!mt-0 dark:mx-0.5 dark:mb-1.5"} divClass={"mr-1 hover:dark:bg-light hover:dark:text-dark dark:m-2 hover:dark:rounded"}/>
